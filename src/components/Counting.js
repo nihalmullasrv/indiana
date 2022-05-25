@@ -14,7 +14,6 @@ import logo from "./img/logo/indiana3.svg";
 import management from "./img/icons/management_new.svg";
 import teacher from "./img/icons/user-blue.svg";
 
-
 import Slider from "./Home_Slider/slider/Slider";
 
 //icons
@@ -47,6 +46,9 @@ import Countbg from "./img/images/count-bg.jpg";
 import Wave3 from "./img/images/wave3.svg";
 import Phone from "./img/images/phone.svg";
 
+//counter pkg
+import CountUp from "react-countup";
+
 const Counting = () => {
   return (
     <div>
@@ -77,7 +79,7 @@ const Counting = () => {
                       </div>
                       <div className="sub-box sub-box2">
                         <div className="counter-value" data-count={1000}>
-                          0
+                          <CountUp delay={1} end={1000} />
                         </div>
                         <span className="plus">+</span>
                       </div>
@@ -101,7 +103,7 @@ const Counting = () => {
                       </div>
                       <div className="sub-box sub-box2">
                         <div className="counter-value" data-count={2000}>
-                          0
+                          <CountUp delay={1} end={2000} />
                         </div>
                         <span className="plus">+</span>
                       </div>
@@ -125,7 +127,7 @@ const Counting = () => {
                       </div>
                       <div className="sub-box sub-box2">
                         <div className="counter-value" data-count={1180}>
-                          0
+                          <CountUp delay={1} end={1180} />
                         </div>
                         <span className="plus">+</span>
                       </div>
@@ -149,7 +151,7 @@ const Counting = () => {
                       </div>
                       <div className="sub-box sub-box2">
                         <div className="counter-value" data-count={30}>
-                          0
+                          <CountUp delay={1} end={30} />
                         </div>
                         <span className="plus">+</span>
                       </div>
